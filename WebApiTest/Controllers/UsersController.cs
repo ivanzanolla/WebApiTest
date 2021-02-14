@@ -99,6 +99,19 @@ namespace WebApiTest.Controllers
             return NoContent();
         }
 
+
+
+        #region Regions
+
+        [HttpGet("GetRegions")]
+
+        public async Task<ActionResult<IEnumerable<Region>>> GetRegions()
+        {
+            return await _context.Regions.ToListAsync();
+        }
+
+        #endregion
+
         private bool UserExists(long id)
         {
             return _context.Users.Any(e => e.Id == id);

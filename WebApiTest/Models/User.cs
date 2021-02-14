@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace WebApiTest.Models
+﻿namespace WebApiTest.Models
 {
     public class User
     {
@@ -13,11 +8,13 @@ namespace WebApiTest.Models
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
-        
+
         public string Address { get; set; }
 
+        public Region Region { get; set; }
 
- 
+
+
 
     }
 }

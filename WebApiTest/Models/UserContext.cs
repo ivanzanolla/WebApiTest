@@ -1,8 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace WebApiTest.Models
 {
@@ -16,6 +12,7 @@ namespace WebApiTest.Models
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Region> Regions { get; set; }
 
     }
 }
